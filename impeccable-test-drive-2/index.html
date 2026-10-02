@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What to expect on the call — Haven</title>
+  <style>
+    :root {
+      --paper: #F3F6F2;
+      --ink: #1A2318;
+      --line: #D5DED2;
+      --accent: #2F6B4F;
+      --accent-ink: #F5FAF7;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body { background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.6 system-ui, sans-serif; }
+    header { padding: 1.5rem 1.25rem; }
+    .logo { font: 600 1.5rem Georgia, serif; text-decoration: none; }
+    main { padding-block: 3rem; }
+    .wrap { max-width: 64rem; margin: 0 auto; padding: 0 1.25rem; }
+    h1 { font: 600 clamp(2rem, 5vw, 3.25rem)/1.1 Georgia, serif; margin-bottom: 1.5rem; }
+    /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+    h1 { background: linear-gradient(90deg, #2F6B4F, #B5533F); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    /* Intentional, for Impeccable's test drive: low-contrast text, light grey on paper. */
+    .lede { color: #CFCFCF; margin-bottom: 2rem; }
+    .agenda { list-style: none; padding: 0; display: grid; gap: 0.75rem; margin-bottom: 2rem; }
+    /* Intentional, for Impeccable's test drive: hard-coded colour that is not in DESIGN.md's palette. */
+    .agenda li { background: #FAFCF9; border: 1px solid var(--line); border-left: 4px solid #C2410C; border-radius: 10px; padding: 1rem 1.25rem; }
+    /* Intentional, for Impeccable's test drive: transition on a layout property. */
+    .meter { height: 6px; width: 30%; background: var(--accent); transition: width 0.3s; margin-bottom: 2rem; }
+    .meter:hover { width: 100%; }
+    /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+    .flush { padding: 0; margin: 0 0 2rem; max-width: none; }
+    .btn { display: inline-block; background: var(--accent); color: var(--accent-ink); padding: 0.85rem 1.4rem; border-radius: 6px; font-weight: 600; text-decoration: none; }
+    /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+    .tiny-link { font-size: 10px; }
+  </style>
+</head>
+<body>
+  <header><a class="logo" href="../">Haven</a></header>
+  <main>
+    <div class="wrap">
+      <h1>What to expect on the call</h1>
+      <p class="lede">Your 45-minute consult is a conversation, not a presentation. Here is how the time usually goes.</p>
+      <div class="meter" aria-hidden="true"></div>
+      <ul class="agenda">
+        <li>First 10 minutes: your advisor listens to the situation and asks clarifying questions.</li>
+        <li>Next 25 minutes: options, trade-offs and what a fair outcome looks like for everyone involved.</li>
+        <li>Last 10 minutes: agreeing next steps and what will be in your written summary.</li>
+      </ul>
+    </div>
+    <p class="flush">Everything you share on the call stays between you and your advisor, and your written summary arrives in your inbox within a day of the call.</p>
+    <div class="wrap">
+      <a class="btn" href="mailto:hello@haven.example">Book a consult</a>
+      <p><a class="tiny-link" href="../">Back to the home page</a></p>
+    </div>
+  </main>
+</body>
+</html>
